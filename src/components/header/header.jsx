@@ -8,7 +8,7 @@ export const Header = () => {
   const [user, setUser] = useState(null);
   useEffect(() => {
     if (window) setUser(localStorage.getItem("email"));
-  });
+  }, []);
   return (
     <header>
       <div>
